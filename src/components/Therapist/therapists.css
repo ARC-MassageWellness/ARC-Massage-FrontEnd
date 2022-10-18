@@ -1,0 +1,57 @@
+.OR {
+  text-align: center;
+  font-size: 5em;
+}
+
+.familyPhoto {
+  min-width: 100%;
+  margin-bottom: 30px;
+}
+
+.therapistServices {
+  border: 4px;
+}
+
+.therapistName {
+  text-align: center;
+}
+
+.therapistName:first-child {
+  font-size: 1em;
+}
+
+.therapistServiesTitles {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.therapistLicenses {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.therapistContainer {
+  margin-bottom: 100px;
+}
+
+.TherapistCardContent {
+  margin: 10px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px inset,inset rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.therapistCards {
+  /* border: red solid 5px; */
+  background-color: rgb(221, 212, 215);
+}
+
+.therapistBioSection {
+}
+
+.therapistServicesDiv {
+  text-align: center;
+}
+
+.MuiCardHeader-subheader {
+
+}

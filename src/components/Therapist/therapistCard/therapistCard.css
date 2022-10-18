@@ -1,0 +1,56 @@
+.therapistSection {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 10px;
+  background-color: rgb(221, 212, 215);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px , rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  /* color: aqua; */
+}
+
+.therapistInfo {
+  /* display: inline-block; */
+  /* border: green solid 5px; */
+  /* width: 60%; */
+  margin: 10px;
+}
+
+.therapistImg {
+}
+
+.therapistInfo > div:first-child {
+  text-align: center;
+  font-size: 3em;
+}
+
+.therapistCardLicense {
+  text-align: center;
+}
+
+.therapistInfo >div:last-child {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px inset,inset rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  margin: 10px;
+  padding: 13px;
+  background-color: rgb(249, 249, 249);
+}
+
+.therapistServiceSection {
+  text-align: center;
+  height: 100%;
+}
+
+.therapistServiceSection section:first-child {
+  margin-top: 10%;
+  font-size: 2em;
+}
+
+.therapistServiceSection section:last-child {
+  margin-right: 20px;
+  padding: 20px 10px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px inset,inset rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  background-color: rgb(249, 249, 249);
+}
+
+.therapistServiceSection section:last-child > div {
+  margin-top: 10px;
+  text-align: center;
+}
