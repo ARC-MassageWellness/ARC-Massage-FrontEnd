@@ -24,6 +24,11 @@ export default function Nav(props) {
           </Link>
         </span>
         <span>
+          <Link className="linkComponent" to="/therapist">
+            Therapists
+          </Link>
+        </span>
+        <span>
           <Link className="linkComponent" to="/about">
             Contact
           </Link>
@@ -54,6 +59,11 @@ export default function Nav(props) {
         <div className="navLinkComponentContainer">
           <Link className="navLinkComponent" to="/services">
             Services
+          </Link>
+        </div>
+        <div className="navLinkComponentContainer">
+          <Link className="navLinkComponent" to="/therapist">
+            Therapists
           </Link>
         </div>
         <div className="navLinkComponentContainer">

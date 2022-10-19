@@ -6,6 +6,7 @@ import Location from "../Location/Location";
 import Main from "../Main/Main";
 import PackageSale from "../Services/sale/PackageSale";
 import Services from "../Services/Services";
+import Therapist from '../Therapist/Therapist';
 import "./landing.css";
 
 export default function Landing(props) {
@@ -41,6 +42,20 @@ export default function Landing(props) {
           }
         />
       </Routes>
+
+      <Routes>
+        <Route
+          path="/therapist"
+          element={
+            <>
+              <Header />
+              {/* <PackageSale /> */}
+              <Therapist />
+            </>
+          }
+        />
+      </Routes>
+
       <Routes>
         <Route
           path="/about"
