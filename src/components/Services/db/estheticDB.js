@@ -71,6 +71,13 @@ export const db = [
     type: 'wax',
     duration: 30,
   },
+  
+  
+  
+  
+  
+  
+  
   {
     title: 'Full Face',
     image: '',
