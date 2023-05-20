@@ -77,7 +77,6 @@ export const db = [
   
   
   
-  
   {
     title: 'Full Face',
     image: '',
