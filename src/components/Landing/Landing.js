@@ -6,6 +6,7 @@ import Location from "../Location/Location";
 import Main from "../Main/Main";
 import Medical from '../Medical/Medical';
 import Services from "../Services/Services";
+import Therapist from '../Therapist/Therapist';
 import "./landing.css";
 import Banner from '../Banner/Banner';
 import EstheticServices from '../Services/EstheticService'
