@@ -6,10 +6,15 @@ export default function Medical(props) {
       <section className="medicalSection">
         <h1 className="medicalTitle">Major Medical - PIP - L&I Information</h1>
         <p>
-          At this moment, ARC Massage and Family Wellness does <strong>NOT</strong> bill towards Major Medical, L&I,
-          or PIP.
+          At this moment, ARC Massage and Family Wellness does bill towards L&I
+          and PIP, but does not <strong>NOT</strong> bill Major Medical.
         </p>
         <p>We will possibly accept insurance and major medical in the future, but not at this moment.</p>
+
+        <a target="_blank" title="Intake Form" href="https://intakeq.com/new/spumpn/2i52sx"> Medical Massage Intake </a>
+
+        <div>Fax Number: 206-258-8843 (place in footer next to phone as well)</div>
+
 
         <section>
           <h3 className='medicalTitle'>Referral</h3>

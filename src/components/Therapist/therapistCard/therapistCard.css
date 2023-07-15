@@ -1,5 +1,5 @@
 .therapistSection {
-  width: 80%;
+  max-width: 1024px;
   margin: auto;
   margin-bottom: 10px;
   background-color: rgb(221, 212, 215);
@@ -8,38 +8,43 @@
 }
 
 .therapistInfo {
-  margin: 10px;
+  /* margin-bottom: 0px; */
 }
 
 /* Therapist Name section */
 .therapistInfo > div:first-child {
   text-align: center;
-  font-size: 3em;
+  font-size: 2.7em;
 }
 
 .therapistCardLicense {
   text-align: center;
 }
 
+.therapistImg {
+  width: 400px;
+}
+
 .TherapistBio {
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px inset,inset rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  margin: 10px;
+  margin-right: 10px;
   padding: 13px;
   background-color: rgb(249, 249, 249);
-  /* width: 400px; */
-  position: relative;
-  bottom: 200px;
+  max-height: 250px;
+  overflow: auto;
 }
 
 .therapistServiceSection {
   text-align: center;
   height: 100%;
+  min-width: 150px;
 }
 
 /* Services Title section */
 .therapistServiceSection section:first-child {
   margin-top: 10%;
   font-size: 2em;
+  margin-bottom: 27px;
 }
 
 /* Services Service section */
@@ -56,92 +61,64 @@
   text-align: center;
 }
 
-
-@media(max-width: 1450px) {
-  .TherapistBio {
-    width: 80%;
-    height: 250px;
-    margin-left: 120px;
-    overflow: scroll;
-    position: relative;
-    bottom: 270px;
-  }
+.bioSpace {
+  margin-bottom: 5px;
 }
 
+.therapistName {
+  /* border: red solid 5px; */
+  /* color: aqua; */
+}
 
-@media(max-width: 1025px) {
+@media(max-width: 1250px) {
   .therapistInfo > div:first-child {
-    margin-top: 70px;
-  }
-
-  .TherapistBio {
-    margin-left: 40px;
-    margin-top: 45px;
-  }
-
-  .therapistSection {
-    height: 700px;
-  }
-
-  .therapistServiceSection {
-    position: relative;
-    left: 650px;
-    height: 250px;
-  }
+    font-size: 2.5em;
+}
 }
 
-@media(max-width: 770px) {
-  .therapistServiceSection {
-    position: relative;
-    left: 0px;
-    height: 250px;
-    margin-left: 20px;
-  }
-  .therapistSection {
-    height: 1250px;
-  }
+@media(max-width: 1150px) {
   .TherapistBio {
-    position: relative;
-    bottom: 0;
-    width: 87%
+    margin-left: 10px;
+    max-height: 200px;
   }
-  .therapistImg {
-    margin-left: 120px;
+
+  .therapistSection {
+    height: fit-content;
+    padding-bottom: 10px;
+  }
+
+  .therapistImgBox {
+    display: flex;
+    justify-content: center;
+  }
+
+  .therapistServiceSection {
+    margin-left: 10px;
+  }
+
+  .therapistServiceSection section:first-child {
     margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .services {
+    display: inline;
+    margin-right: 30px;
+  }
+
+  .therapistServiceSection section:last-child {
+    margin-right: 10px;
   }
 }
 
-@media(max-width: 426px) {
-  .therapistImg {
-    margin-left: 0px;
-    width: 330px;
-    margin-top: 0px;
-  }
-  .TherapistBio {
-    margin-left: 0px;
-    width: 100%;
-  }
+@media(max-width: 600px) {
+  .therapistInfo > div:first-child {
+    /* text-align: center; */
+    font-size: 2em;
 }
-@media(max-width: 391px) {
-  .therapistImg {
-    max-width: 310px;
-  }
 }
-
-@media(max-width: 376px) {
+@media(max-width: 520px) {
   .therapistImg {
-    max-width: 300px;
-  }
-}
-
-@media(max-width: 361px) {
-  .therapistImg {
-    max-width: 290px;
-  }
-}
-
-@media(max-width: 326px) {
-  .therapistImg {
-    max-width: 255px;
+    max-width: 90%;
   }
 }

@@ -1,5 +1,4 @@
-import "./packageSale.css";
-import { Alert } from "react-bootstrap";
+import { Alert } from 'react-bootstrap';
 
 let JanuarySale = (
   <p>
@@ -25,11 +24,11 @@ export default function PackageSale(props) {
           <hr />
           <p>Buy online through IntakeQ or contact us using the links below</p>
           <p>
-            Please email{" "}
+            Please email{' '}
             <Alert.Link href="mailto:support@arcmassageandwellness.com?subject=To ARC Massage and Wellness - Packages">
               support@arcmassageandwellness.com
-            </Alert.Link>{" "}
-            or call{" "}
+            </Alert.Link>{' '}
+            or call{' '}
             <Alert.Link href="tel:2064753574">(206) 475-3574</Alert.Link> for
             more information
           </p>

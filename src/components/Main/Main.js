@@ -21,7 +21,7 @@ export default function Main(props) {
             Get the rejuvenating feeling your body has been craving.
           </div>
             <Link to="/services" className="MTSessionButton">
-              Massage Therapy Sessions
+              ARC Services
             </Link>
         </div>
       </section>

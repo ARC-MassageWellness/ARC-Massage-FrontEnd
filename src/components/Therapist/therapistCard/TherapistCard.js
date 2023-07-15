@@ -1,46 +1,61 @@
-import { Grid } from "@mui/material";
-import "./therapistCard.css";
+import { Grid } from '@mui/material';
+import './therapistCard.css';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 export default function TherapistCard({ el }) {
-  const { name, bio, services, licenses } = el;
-  return (
-    <section className="therapistSection">
-      <Grid container>
-        <Grid item xs={12} sm={12} md={6} lg={3}>
-          <img
-            src="https://via.placeholder.com/400x400?text=Profile+Photo"
-            alt="portrait"
-            className="therapistImg"
-          />
-        </Grid>
-        <Grid item xs={12} sm={12} md={6} lg={7}>
-          <section className="therapistInfo">
-            <div>{name}</div>
-            <div className="therapistCardLicense">
-              {licenses.map((el, idx) => (
-                <span key={idx}>{el} </span>
-              ))}
-            </div>
-          </section>
-        </Grid>
-        <Grid item xs={12} sm={12} md={0} lg={2}>
-          <section className="therapistServiceSection">
-            <section>Services:</section>
-            <section>
-              {services.map((el, idx) => (
-                <div key={idx}>{el} </div>
-              ))}{" "}
-            </section>
-          </section>
-        </Grid>
+  const { name, bio, services, licenses, image } = el;
 
-        {/* Next line in Grid */}
-        <Grid item xs={0} sm={12} md={0} lg={3}></Grid>
-        <Grid item xs={12} sm={12} md={10} lg={7}>
-          <div className='TherapistBio'>{bio}</div>
+  const theme = createTheme({
+    breakpoints: {
+      values: {
+        xs: 0,
+        sm: 1150,
+        md: 1250,
+        lg: 1536,
+        // xl: 1600,
+      },
+    },
+  });
+
+  return (
+    <ThemeProvider theme={theme}>
+      <section className="therapistSection">
+        <Grid container columns={15}>
+          <Grid item xs={15} sm={6} md={6} lg={6} xl={3}>
+            <div className='therapistImgBox'>
+              
+            <img src={el.image} alt="portrait" className="therapistImg" />
+            </div>
+          </Grid>
+          <Grid item xs={15} sm={6.5} md={6.5} lg={6.5} xl={10}>
+            <section className="therapistInfo">
+              <div className="therapistName">{name}</div>
+              <div className="therapistCardLicense">
+                Licenses:{' '}
+                {licenses.map((el, idx) => (
+                  <span key={idx}>{el} </span>
+                ))}
+              </div>
+            </section>
+            <div className="TherapistBio">
+              {/* {bio} */}
+              {Array.isArray(bio)
+                ? bio.map((el) => <div className="bioSpace">{el}</div>)
+                : bio}
+            </div>
+          </Grid>
+          <Grid item xs={15} sm={2} md={2} lg={2} xl={2}>
+            <section className="therapistServiceSection">
+              <section>Services:</section>
+              <section>
+                {services.map((el, idx) => (
+                  <div className='services' key={idx}>{el} </div>
+                ))}{' '}
+              </section>
+            </section>
+          </Grid>
         </Grid>
-        <Grid item xs={0} sm={12} md={2} lg={2}></Grid>
-      </Grid>
-    </section>
+      </section>
+    </ThemeProvider>
   );
 }

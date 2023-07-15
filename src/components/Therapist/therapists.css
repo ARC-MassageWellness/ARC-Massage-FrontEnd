@@ -1,45 +1,13 @@
 .familyPhoto {
-  min-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
   margin-bottom: 30px;
-  max-height: 500px;
 }
 
-@media(max-width: 1450px) {
+@media(max-width: 1400px) {
   .familyPhoto {
-    width: 1400px;
-  }
-  .therapistBio {
-    width: ;
+  width: 100%
   }
 }
-
-@media(max-width: 1030px) {
-  .familyPhoto {
-    max-width: 523px;
-  }
-}
-
-@media(max-width: 426px) {
- .familyPhoto {
-  max-width: 400px;
- }
-}
-
-@media(max-width: 391px) {
-  .familyPhoto {
-    max-width: 320px;
-  }
-}
-
-@media(max-width: 376px) {
-  .familyPhoto {
-    max-width: 350px;
-  }
-}
-
-@media(max-width: 326px) {
-  .familyPhoto {
-    max-width: 255px;
-  }
-}
-

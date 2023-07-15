@@ -38,7 +38,7 @@ This website is to help my friend build her business. She is opening up her own 
   - [x] Mothers Day
 - Therapist Page
   - [x] Therapist Section
-    - [] Adding therapist bio
+    - [x] Adding therapist bio
 - [] Spanish Page
 - [x] Google Maps API
   <!-- - 5-10 dollars ok, anything above, contact Nicolle first -->
@@ -48,7 +48,7 @@ This website is to help my friend build her business. She is opening up her own 
     - [] Breast Massage
       <!-- - Attached to the basic massage
       - Notes in chat with Nicolle -->
-    - []s Craniosacral Massage
+    - [] Craniosacral Massage
     - [] Interoral Masage
     - [] Couples massage
       - [] Note call or text only, no online booking
@@ -58,16 +58,17 @@ This website is to help my friend build her business. She is opening up her own 
         - Services
           - copy link -->
   - Services
-    - [] Move cupping into enhancements
+    - [x] Move cupping into enhancements
     - [] Change cupping to intraoral
       - [] Get wording for intraoral
     - [] Combine Services
       - [] Hover to see descriptions?
   - Footer
     - [] Update year to automatically change 2022 to 2023 example
+    - [x] Add Hours/Fax
 - Affiliations
-  - [] Better Business Bureau
-  - [] Renton Chamber of Commerce 
+  - [x] Better Business Bureau
+  - [x] Renton Chamber of Commerce 
 
 ## Deployment
 

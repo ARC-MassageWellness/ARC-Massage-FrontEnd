@@ -74,6 +74,19 @@ export default function Landing(props) {
 
       <Routes>
         <Route
+          path="/therapist"
+          element={
+            <>
+              <Header fontColor={'rgb(108, 116, 158)'}/>
+              <Banner />
+              <Therapist />
+            </>
+          }
+        />
+      </Routes>
+
+      <Routes>
+        <Route
           path="/about"
           element={
             <>
