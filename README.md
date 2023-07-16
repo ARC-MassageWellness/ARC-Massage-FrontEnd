@@ -63,6 +63,7 @@ This website is to help my friend build her business. She is opening up her own 
       - [] Get wording for intraoral
     - [] Combine Services
       - [] Hover to see descriptions?
+    - [] Gift Cards
   - Footer
     - [] Update year to automatically change 2022 to 2023 example
     - [x] Add Hours/Fax

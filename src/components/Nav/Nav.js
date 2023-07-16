@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Intakeq from '../intakeq/intakeq';
+import Intakeq from '../Services/type/Buttons/intakeq/intakeq';
 
 export default function Nav(props) {
   const [open, setOpen] = useState(false);
