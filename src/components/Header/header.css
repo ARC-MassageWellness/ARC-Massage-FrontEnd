@@ -134,6 +134,7 @@ header {
   right:20px;
   padding: 10px;
   z-index: 20;
+  background-color: rgb(249,249,249);
 }
 
 .hamburger > div {
@@ -156,13 +157,14 @@ header {
 }
 
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1525px) {
   .navContainer {
     display: none;
   }
 
   .bookNow {
-    display: none;
+    /* display: none; */
+    margin-right: 50px;
   }
 
   .navMobileContainer {
@@ -171,6 +173,12 @@ header {
 
   .hamburger {
     display: block;
+  }
+}
+
+@media (max-width: 800px) {
+  .bookNow {
+    display: none;
   }
 }
 

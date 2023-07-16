@@ -50,6 +50,12 @@
 
 /* ########## Media ########## */
 
+@media (max-width: 1024px) {
+  .locationContainer {
+    width: 100%;
+  }
+}
+
 @media (max-width: 900px) {
   .locationContainer {
     width: 90vmin;

@@ -1,6 +1,6 @@
-import { Grid } from "@mui/material";
-import { intro, hours, policy } from "../About/db/db";
-import "./about.css";
+import { Grid } from '@mui/material';
+import { intro, hours, policy } from '../About/db/db';
+import './about.css';
 
 export default function About(props) {
   
@@ -12,7 +12,9 @@ export default function About(props) {
     return (
       <Grid item className="gridItem">
         <div className="hourDay">{el.day}</div>
-        <div className="hourTime">{el.hours}</div>
+        <div className="hourTime">
+          {el.hours} {el.day === 'Sunday' ? '' : 'Appointments only'}
+        </div>
       </Grid>
     );
   });
@@ -31,7 +33,7 @@ export default function About(props) {
   });
 
   return (
-    <div className='aboutContainer'>
+    <div className="aboutContainer">
       <section className="width1024 introSection">
         {introSection}
         {/* <section className="introButton">Email</section>
@@ -50,19 +52,22 @@ export default function About(props) {
 
       <section className="width1024 contactSection">
         <div>Let us know how we can best serve you.</div>
-        <div className='appContact'>Phone: Appointment / Contact / Text</div>
-        <div className='line'>{" "}</div>
-        <span>Phone Number: </span><span className='phoneNumber'><a href="tel:2064753574">(206) 475-3574</a><div></div></span>
-        <span>Fax Number: </span><span>206-258-8843</span>
+        <div className="appContact">Phone: Appointment / Contact / Text</div>
+        <div className="line"> </div>
+        <span>Phone Number: </span>
+        <span className="phoneNumber">
+          <a href="tel:2064753574">(206) 475-3574</a>
+          <div></div>
+        </span>
+        <span>Fax Number: </span>
+        <span>206-258-8843</span>
       </section>
 
       <section className="width1024 poicySection">
         <div className="policyIntro">Policies and Information</div>
         {policySection}
       </section>
-      <div className="endOfAbout">
-        
-      </div>
+      <div className="endOfAbout"></div>
     </div>
   );
 }

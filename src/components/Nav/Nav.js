@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import Intakeq from '../intakeq/intakeq';
+import Intakeq from '../Services/type/Buttons/intakeq/intakeq';
 
 export default function Nav(props) {
   const [open, setOpen] = useState(false);
@@ -30,6 +30,11 @@ export default function Nav(props) {
           </Link>
         </span>
         <span>
+          <Link className="linkComponent" to="/therapist">
+            <span style={{ color: props.fontColor }}>Team</span>
+          </Link>
+        </span>
+        <span>
           <Link className="linkComponent" to="/about">
             <span style={{ color: props.fontColor }}>Contact</span>
           </Link>
@@ -53,31 +58,63 @@ export default function Nav(props) {
 
       <ul className={open ? 'navMobileContainer' : 'closed'}>
         <div className="navLinkComponentContainer">
-          <Link className="navLinkComponent" to="/">
+          <Link
+            className="navLinkComponent"
+            to="/"
+            onClick={() => setOpen(false)}
+          >
             Home
           </Link>
         </div>
         <div className="navLinkComponentContainer">
-          <Link className="navLinkComponent" to="/location">
+          <Link
+            className="navLinkComponent"
+            to="/location"
+            onClick={() => setOpen(false)}
+          >
             Location
           </Link>
         </div>
         <div className="navLinkComponentContainer">
-          <Link className="navLinkComponent" to="/services">
+          <Link
+            className="navLinkComponent"
+            to="/services"
+            onClick={() => setOpen(false)}
+          >
             Services
           </Link>
         </div>
         <div className="navLinkComponentContainer">
-          <Link className="navLinkComponent" to="/medical">
+          <Link
+            className="navLinkComponent"
+            to="/medical"
+            onClick={() => setOpen(false)}
+          >
             Insurance
           </Link>
         </div>
         <div className="navLinkComponentContainer">
-          <Link className="navLinkComponent" to="/about">
+          <Link
+            className="navLinkComponent"
+            to="/therapist"
+            onClick={() => setOpen(false)}
+          >
+            Team
+          </Link>
+        </div>
+        <div className="navLinkComponentContainer">
+          <Link
+            className="navLinkComponent"
+            to="/about"
+            onClick={() => setOpen(false)}
+          >
             Contact
           </Link>
         </div>
-        <span className="navLinkComponentContainer">
+        <span
+          className="navLinkComponentContainer"
+          onClick={() => setOpen(false)}
+        >
           <Intakeq className="navLinkComponent" />
         </span>
       </ul>

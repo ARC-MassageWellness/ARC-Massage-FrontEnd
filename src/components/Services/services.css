@@ -87,6 +87,15 @@
   /* background-color: red; */
 }
 
+.serviceDescriptions {
+  max-width: 1024px;
+  margin: 30px auto;
+  background-color: rgb(40, 54, 107, 0.2);
+  padding: 15px 30px;
+  border-radius: 10px;
+}
+
+
 @media (max-width:1200px) {
   .serviceContainer{
     width: 100vw;
