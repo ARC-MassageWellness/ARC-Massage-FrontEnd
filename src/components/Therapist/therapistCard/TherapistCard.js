@@ -3,7 +3,7 @@ import './therapistCard.css';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 export default function TherapistCard({ el }) {
-  const { name, bio, services, licenses, image } = el;
+  const { name, bio, services, licenses, image} = el;
 
   const theme = createTheme({
     breakpoints: {
@@ -24,7 +24,7 @@ export default function TherapistCard({ el }) {
           <Grid item xs={15} sm={6} md={6} lg={6} xl={3}>
             <div className='therapistImgBox'>
               
-            <img src={el.image} alt="portrait" className="therapistImg" />
+            <img src={image} alt="portrait" className="therapistImg" />
             </div>
           </Grid>
           <Grid item xs={15} sm={6.5} md={6.5} lg={6.5} xl={10}>

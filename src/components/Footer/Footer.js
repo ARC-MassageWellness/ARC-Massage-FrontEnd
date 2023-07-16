@@ -133,6 +133,7 @@ export default function Footer(props) {
                 <a
                   href="https://www.gorenton.com/info_logs/log_chamber?redirect=https://www.gorenton.com/"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <img
                     src="https://bloqs.s3.amazonaws.com/1247-6902/504588_ProudMemberLogosColor.png"
@@ -146,7 +147,7 @@ export default function Footer(props) {
               <a
                 href="https://www.bbb.org/us/wa/renton/profile/massage-therapist/arc-massage-and-family-wellness-center-llc-1296-1000141830/#sealclick"
                 target="_blank"
-                rel="nofollow"
+                rel="nofollow noreferrer"
               >
                 <img
                   src="https://seal-alaskaoregonwesternwashington.bbb.org/seals/blue-seal-250-52-bbb-1000141830.png"

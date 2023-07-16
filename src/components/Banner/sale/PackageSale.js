@@ -97,20 +97,3 @@ export default function PackageSale(props) {
 //     </p>
 //   </p>
 // );
-
-{
-  /* <span>
-  <h1 className="bannerHeader">
-    <div className="bannerSection">
-      <span>Our Packages are on Sale!</span>{' '}
-      
-    </div>
-    <span className="bannerExit">
-      <CloseIcon
-        sx={{ fontSize: 40 }}
-        onClick={() => openBanner(false)}
-      />
-    </span>
-  </h1>
-</span> */
-}
