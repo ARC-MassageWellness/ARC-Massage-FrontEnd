@@ -13,8 +13,8 @@ export default function Medical(props) {
           We will possibly accept insurance and major medical in the future, but
           not at this moment.
         </p>
-        rel="noreferrer"
         <a
+          rel="noreferrer"
           target="_blank"
           title="Intake Form"
           href="https://intakeq.com/new/spumpn/2i52sx"
