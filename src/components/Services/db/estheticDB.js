@@ -101,10 +101,19 @@ export const db = [
     duration: 70,
   },
   {
+    title: 'Age Later Facial',
+    image: '',
+    bio: 'Minimize the signs of aging, this facial is rich with antioxidants to help battle free radical damage, leaving your skin feeling nourished and rejuvenated. Comeswith Red LED.',
+    cost: 168,
+    type: 'Facial',
+    duration: 75,
+  },
+  {
     title: 'Brow Wax',
     image: '',
     bio: 'Shaping or clean-up of your eyebrows.',
     cost: 25,
+
     type: 'Wax',
     duration: 30,
   },
@@ -231,7 +240,7 @@ export const db = [
   {
     title: 'Brow and Lash Lamination',
     image: '',
-    bio: 'Enhance your natural brows and lashes with our brow and lash treatment.',
+    bio: 'Enhance your natural brows and lashes with our brow and lash treatment. Comes with free brow and lash tint',
     cost: 200,
     type: 'Lamination and Tint Services',
     duration: 80,
@@ -318,6 +327,22 @@ export const db = [
     bio: 'Esthetician will need to assess your skin prior to starting the treatment to know which peel your skin will be able to handle with the dermaplane. This will either be with the O2 Lift Treatment or Signature Peel.',
     cost: 275,
     type: 'Peel',
+    duration: 60,
+  },
+  {
+    title: 'O2 Lift Treatment',
+    image: '',
+    bio: 'Our signature oxygenating treatment disgned to boost brightness and glow in dull skin',
+    cost: 150,
+    type: 'peel',
+    duration: 45,
+  },
+  {
+    title: 'Signature Peel',
+    image: '',
+    bio: 'Features Vitamin C, Fruit enzymes and hyaluronic acid to brighten, hydrate and smooth the skin.',
+    cost: 175,
+    type: 'peel',
     duration: 60,
   },
   {

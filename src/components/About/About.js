@@ -3,6 +3,7 @@ import { intro, hours, policy } from '../About/db/db';
 import './about.css';
 
 export default function About(props) {
+  
   const introSection = intro.map((el) => {
     return <div className="infoParagraph">{el}</div>;
   });
