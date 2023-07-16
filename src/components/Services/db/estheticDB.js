@@ -6,13 +6,42 @@ Under enhancements
   Ampoules (facial product enhancer
 */
 
+// Intro to sections
+
+export const sectionTitles = [
+  {
+    title: 'Facial',
+    description: 'A facial is a skin care treatments for the face or back, including steam, exfoliation (physical and chemical), extraction, creams, lotions, facial masks, peels, and massage.'
+  },
+  {
+    title: 'Wax',
+    description: 'Waxing is the process of hair removal from the root by using a covering such as hard wax, soft wax, or we even have sugaring for those that prefer.'
+  },
+  {
+    title: 'Lamination and Tint Services',
+    description: 'Lamination is the process of perming either your brows or your lashes. Lamination can help get rid of the appearance of bare patches and irregular hairs, as well as make thin lashes or brows look way fuller.'
+  },
+  {
+    title: 'Peel',
+    description: 'A peel is a procedure in which a solution is applied to the skin to remove the top layers. The skin that grows back is smoother. With a light or medium peel, you may need to undergo the procedure more than once to get the desired results. IF YOU ARE WANTING A PEEL BEFORE AN EVENT, YOU MUST GET THIS NO LESS THAN A WEEK PRIOR FOR BEST RESULTS.'
+  },
+  {
+    title: 'Facial Enhancements',
+    description: 'Enhance your session with some extras! Only back facials require additional time. It is recommended that you either put it in your session notes, call, or text to add enhancements.'
+  },
+  {
+    title: 'Enhancements',
+    description: 'Adding a little extra to your session.'
+  },
+]
+
 export const db = [
   {
     title: 'Custom Facial',
     image: '',
     bio: 'A personalized treatment in the traditional European facial style, including; cleansing, exfoliation, massage, a mask and extractions to rejuvenate and maintain.',
     cost: 175,
-    type: 'facial',
+    type: 'Facial',
     duration: 90,
   },
   {
@@ -20,7 +49,7 @@ export const db = [
     image: '',
     bio: 'Ideal for blemish-prone and congested skin. Steam, manual lymphatic drainage with clarifying essential oils, and a minimum of 20 min for cleansing and extractions will leave your skin feeling thoroughly refreshed with less inflammation.',
     cost: 150,
-    type: 'facial',
+    type: 'Facial',
     duration: 70,
   },
   {
@@ -28,39 +57,64 @@ export const db = [
     image: '',
     bio: 'Using manual exfoliation to remove the dull dead layer of skin and hair, allowing for deeper product penetration and instant results. Great for all skin types, even sensitive skin!',
     cost: 175,
-    type: 'facial',
+    type: 'Facial',
     duration: 80,
   },
   {
-    title: 'Classic Hydrating Facial',
+    title: 'Signature Facial',
     image: '',
-    bio: 'Tackle surface dehydration and fine lines with this treatment designed to plump and moisturize the skin.',
+    bio: 'Tackle surface dehydration and fine lines with this treatment designed to plump and moisturize the skin',
     cost: 168,
-    type: 'facial',
+    type: 'Facial',
     duration: 70,
   },
+  {
+    title: 'Age Later Facial',
+    image: '',
+    bio: 'Minimize the signs of aging, this facial is rich with antioxidants to help battle free radical damage, leaving your skin feeling nourished and rejuvenated. Comes with Red LED.',
+    cost: 168,
+    type: 'Facial',
+    duration: 75,
+  },
+  // {
+  //   title: 'Classic Hydrating Facial',
+  //   image: '',
+  //   bio: 'Tackle surface dehydration and fine lines with this treatment designed to plump and moisturize the skin.',
+  //   cost: 168,
+  //   type: 'Facial',
+  //   duration: 70,
+  // },
   {
     title: 'Back Facial',
     image: '',
     bio: 'Treat your back with a stimulating massage, steam, and hydrating mask. All your skin deserves to feel beautiful.',
     cost: 98,
-    type: 'facial',
-    duration: 45,
+    type: 'Facial',
+    duration: 60,
   },
   {
     title: 'Brightening Facial',
     image: '',
     bio: 'Help reduce the look of pigmentation and bring back the glow to sallow skin. Utilizing massage and fruit enzymes to brighten the appearance of your skin.',
     cost: 168,
-    type: 'facial',
+    type: 'Facial',
     duration: 70,
+  },
+  {
+    title: 'Age Later Facial',
+    image: '',
+    bio: 'Minimize the signs of aging, this facial is rich with antioxidants to help battle free radical damage, leaving your skin feeling nourished and rejuvenated. Comeswith Red LED.',
+    cost: 168,
+    type: 'Facial',
+    duration: 75,
   },
   {
     title: 'Brow Wax',
     image: '',
     bio: 'Shaping or clean-up of your eyebrows.',
-    cost: 20,
-    type: 'wax',
+    cost: 25,
+
+    type: 'Wax',
     duration: 30,
   },
   {
@@ -68,31 +122,31 @@ export const db = [
     image: '',
     bio: 'Service includes waxing of both the upper and lower lips OR the chin.',
     cost: 20,
-    type: 'wax',
+    type: 'Wax',
     duration: 30,
   },
   {
     title: 'Full Face',
     image: '',
     bio: 'Includes the hairline, nose, sideburns, cheeks, upper lip, lower lip, chin and front of the neck. EXCLUDES brows.',
-    cost: 40,
-    type: 'wax',
+    cost: 60,
+    type: 'Wax',
     duration: 30,
   },
   {
     title: 'Full Face WITH Brow',
     image: '',
     bio: 'Includes the hairline, eyebrows, nose, sideburns, cheeks, upper lip, lower lip, chin and front of the neck.',
-    cost: 20,
-    type: 'wax',
-    duration: 55,
+    cost: 75,
+    type: 'Wax',
+    duration: 30,
   },
   {
     title: 'Underarms',
     image: '',
     bio: 'Includes the underarm. Does not include the upper arm.',
     cost: 25,
-    type: 'wax',
+    type: 'Wax',
     duration: 30,
   },
   {
@@ -103,16 +157,16 @@ export const db = [
       'Upper: Includes the upper legs, inner thighs and knees. Does not include the bikini line.',
       'Lower: Includes the lower legs, knees, feet and toes.',
     ],
-    cost: 30,
-    type: 'wax',
-    duration: 50,
+    cost: 55,
+    type: 'Wax',
+    duration: 30,
   },
   {
     title: 'Legs Full',
     image: '',
     bio: 'Upper and lower legs. Includes the knees, feet and toes. Does not include the bikini line.',
-    cost: 85,
-    type: 'wax',
+    cost: 95,
+    type: 'Wax',
     duration: 45,
   },
   {
@@ -124,7 +178,7 @@ export const db = [
       'Lower arm including elbow, hands and fingers.',
     ],
     cost: 25,
-    type: 'wax',
+    type: 'Wax',
     duration: 30,
   },
   {
@@ -132,7 +186,7 @@ export const db = [
     image: '',
     bio: 'Currently only offered to guests with a vulva. Includes 4 finger widths from the natural bikini line and two finger widths from the top. Does not include the inner thigh.',
     cost: 40,
-    type: 'wax',
+    type: 'Wax',
     duration: 30,
   },
   {
@@ -140,7 +194,7 @@ export const db = [
     image: '',
     bio: 'Currently only offered to guests with a vulva. As much or as little as you want off the front. Includes bikini line.',
     cost: 50,
-    type: 'wax',
+    type: 'Wax',
     duration: 30,
   },
   {
@@ -148,7 +202,7 @@ export const db = [
     image: '',
     bio: 'Currently only offered to guests with a vulva. As much or as little as you want off the front. Includes bikini line and butt strip.',
     cost: 120,
-    type: 'wax',
+    type: 'Wax',
     duration: 35,
   },
   // {
@@ -156,7 +210,7 @@ export const db = [
   //   image: '',
   //   bio: 'Currently only offered to guests with a vulva. As much or as little as you want off the front. Includes bikini line and butt strip.',
   //   cost: 60,
-  //   type: 'wax',
+  //   type: 'Wax',
   //   duration: 30,
   // },
   {
@@ -164,31 +218,31 @@ export const db = [
     image: '',
     bio: 'Eyebrow tinting is the process of applying semi-permanent dye to enhance, shape, and define your brows. Brow tinting gives the appearance of thicker, more accentuated brows with the goal being to match your natural brow color whenever possible.',
     cost: 25,
-    type: 'wax',
-    duration: 30,
+    type: 'Wax',
+    duration: 20,
   },
   {
     title: 'Lash Lamination',
     image: '',
     bio: 'Enhance your natural lashes with our lash treatment.',
     cost: 120,
-    type: 'lamination',
-    duration: 35,
+    type: 'Lamination and Tint Services',
+    duration: 80,
   },
   {
     title: 'Brow Lamination',
     image: '',
     bio: 'Enhance your natural brows with our brow treatment.',
-    cost: 20,
-    type: 'lamination',
-    duration: 30,
+    cost: 100,
+    type: 'Lamination and Tint Services',
+    duration: 35,
   },
   {
     title: 'Brow and Lash Lamination',
     image: '',
-    bio: 'Enhance your natural brows and lashes with our brow and lash treatment.',
+    bio: 'Enhance your natural brows and lashes with our brow and lash treatment. Comes with free brow and lash tint',
     cost: 200,
-    type: 'lamination',
+    type: 'Lamination and Tint Services',
     duration: 80,
   },
   {
@@ -196,7 +250,7 @@ export const db = [
     image: '',
     bio: 'Eyebrow tinting is the process of applying semi-permanent dye to enhance, shape, and define your brows. Brow tinting gives the appearance of thicker, more accentuated brows with the goal being to match your natural brow color whenever possible.',
     cost: 25,
-    type: 'lamination',
+    type: 'Lamination and Tint Services',
     duration: 20,
   },
   {
@@ -204,7 +258,7 @@ export const db = [
     image: '',
     bio: 'Lash tinting is a semi-permanent dye is applied to your natural lashes, which will not only highlight your facial features but add a rich color to your lackluster lash line.',
     cost: 35,
-    type: 'lamination',
+    type: 'Lamination and Tint Services',
     duration: 20,
   },
   {
@@ -216,7 +270,7 @@ export const db = [
       'Lash tinting is a semi-permanent dye is applied to your natural lashes, which will not only highlight your facial features but add a rich color to your lackluster lash line.'
   ],
     cost: 60,
-    type: 'lamination',
+    type: 'Lamination and Tint Services',
     duration: 30,
   },
   {
@@ -224,55 +278,79 @@ export const db = [
     image: '',
     bio: 'Treat discoloration, dehydration, uneven skin tone and acne with this peel featuring a blend of brightening ingredients such as lactic and kojic acid.',
     cost: 175,
-    type: 'peel',
+    type: 'Peel',
     duration: 60,
-  },
-  {
-    title: 'Brightening Peel with Dermaplane',
-    image: '',
-    bio: '***Client consultation required*** Treat discoloration, dehydration, uneven skin tone and acne with this peel featuring a blend of brightening ingredients such as lactic and kojic acid.',
-    cost: 275,
-    type: 'peel',
-    duration: 85,
   },
   {
     title: 'Age Defy Peel',
     image: '',
     bio: 'Improve fine lines, age spots and discoloration with a blend of glycolic acid and resorcinol in this peel designed to target the signs of aging.',
     cost: 175,
-    type: 'peel',
+    type: 'Peel',
     duration: 60,
-  },
-  {
-    title: 'Age Defy Peel with Dermaplane',
-    image: '',
-    bio: '***Client consultation required*** Improve fine lines, age spots and discoloration with a blend of glycolic acid and resorcinol in this peel designed to target the signs of aging.',
-    cost: 275,
-    type: 'peel',
-    duration: 85,
   },
   {
     title: 'Acne Peel',
     image: '',
     bio: 'Best peel option for acne-prone and oily skin types with salicylic and glycolic acids to clear and brighten.',
     cost: 175,
-    type: 'peel',
+    type: 'Peel',
     duration: 60,
   },
   {
-    title: 'Acne Peel with Dermaplane',
+    title: 'O2 Lift Treatment',
     image: '',
-    bio: '***Client consultation required*** Best peel option for acne-prone and oily skin types with salicylic and glycolic acids to clear and brighten.',
+    bio: 'Our signature oxygenating treatment designed to boost brightness and glow in dull skin.',
+    cost: 150,
+    type: 'Peel',
+    duration: 45,
+  },
+  {
+    title: 'Signature Peel',
+    image: '',
+    bio: 'Features vitamin C, fruit enzymes and hyaluronic acid to brighten, hydrate and smooth the skin.',
+    cost: 175,
+    type: 'Peel',
+    duration: 60,
+  },
+  // {
+  //   title: 'Age Defy Peel with Dermaplane',
+  //   image: '',
+  //   bio: '***Client consultation required*** Improve fine lines, age spots and discoloration with a blend of glycolic acid and resorcinol in this peel designed to target the signs of aging.',
+  //   cost: 275,
+  //   type: 'Peel',
+  //   duration: 85,
+  // },
+  {
+    title: 'Peel with Dermaplane',
+    image: '',
+    bio: 'Esthetician will need to assess your skin prior to starting the treatment to know which peel your skin will be able to handle with the dermaplane. This will either be with the O2 Lift Treatment or Signature Peel.',
     cost: 275,
+    type: 'Peel',
+    duration: 60,
+  },
+  {
+    title: 'O2 Lift Treatment',
+    image: '',
+    bio: 'Our signature oxygenating treatment disgned to boost brightness and glow in dull skin',
+    cost: 150,
     type: 'peel',
-    duration: 85,
+    duration: 45,
+  },
+  {
+    title: 'Signature Peel',
+    image: '',
+    bio: 'Features Vitamin C, Fruit enzymes and hyaluronic acid to brighten, hydrate and smooth the skin.',
+    cost: 175,
+    type: 'peel',
+    duration: 60,
   },
   {
     title: 'High frequency',
     image: '',
     bio: 'The high frequency is used to treat and prevent stubborn acne, shrink enlarged pores, reduce the appearance of fine lines and wrinkles, decongest puffy eyes, fade dark eye circles and even rejuvenate the condition of the scalp and nourish hair follicles for healthier hair growth.',
     cost: 15,
-    type: 'enhancement',
+    type: 'Facial Enhancements',
     duration: 15,
   },
   {
@@ -280,7 +358,7 @@ export const db = [
     image: '',
     bio: 'Red LED light may reduce inflammation and stimulate the production of collagen, a protein responsible for younger-looking skin that diminishes with age.',
     cost: 15,
-    type: 'enhancement',
+    type: 'Facial Enhancements',
     duration: 15,
   },
   {
@@ -288,7 +366,7 @@ export const db = [
     image: '',
     bio: 'An ampoule is a type of treatment that contains highly-concentrated skincare ingredients. It\'s designed to deliver small, targeted dosages in order to address a particular skin concern, such as skin dryness, discoloration and dark spots, dull skin or wrinkles and other signs of aging.',
     cost: 35,
-    type: 'enhancement',
+    type: 'Facial Enhancements',
     duration: 15,
   },
   {
@@ -296,7 +374,7 @@ export const db = [
     image: '',
     bio: 'Enhance any facial by treating your back with a stimulating massage, steam, and hydrating mask. All your skin deserves to feel beautiful.',
     cost: 80,
-    type: 'enhancement',
+    type: 'Facial Enhancements',
     duration: 45,
   },
   {
@@ -304,7 +382,7 @@ export const db = [
     image: '',
     bio: '',
     cost: 15,
-    type: 'enhancement',
+    type: 'Facial Enhancements',
     duration: 15,
   },
   {
@@ -312,7 +390,15 @@ export const db = [
     image: '',
     bio: '',
     cost: 24,
-    type: 'enhancement',
+    type: 'Facial Enhancements',
+    duration: 15,
+  },
+  {
+    title: 'Eye Mask',
+    image: '',
+    bio: '',
+    cost: 7,
+    type: 'Enhancements',
     duration: 15,
   }
 ];

@@ -1,8 +1,9 @@
 import './services.css';
-import Intakeq from '../intakeq/intakeq';
+import Intakeq from './type/Buttons/intakeq/intakeq';
 import { Tab, Tabs } from 'react-bootstrap';
 import MassageServices from './type/MasssageServices';
 import EstheticServices from './EstheticService';
+import GiftCardButton from './type/Buttons/GiftCards/giftCardButton';
 // import PackageSale from './sale/PackageSale';
 
 export default function Services(props) {
@@ -33,6 +34,7 @@ export default function Services(props) {
         </Tabs>
       </div>
       <section className="bookAppContainer">
+        <GiftCardButton />
         <Intakeq />
       </section>
     </div>

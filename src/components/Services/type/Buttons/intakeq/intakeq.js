@@ -1,4 +1,4 @@
-import "./intakeq.css";
+import '../../Buttons/buttons.css'
 
 export default function Intakeq(props) {
   return (
@@ -8,7 +8,7 @@ export default function Intakeq(props) {
         target="_blank"
         rel="noreferrer"
         alt="Make an Online Appointment"
-        className='bookAppLink '
+        className='bookAppLink'
       >
         Book Now
       </a>

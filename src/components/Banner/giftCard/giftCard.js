@@ -1,5 +1,4 @@
-import "./giftCard.css";
-import { Alert } from "react-bootstrap";
+import { Alert } from 'react-bootstrap';
 export default function GiftCards(props) {
   return (
     <>
@@ -28,11 +27,11 @@ export default function GiftCards(props) {
           <p>Buy online through Square or contact us using the links below</p>
 
           <p>
-            Please email{" "}
+            Please email{' '}
             <Alert.Link href="mailto:support@arcmassageandwellness.com?subject=To ARC Massage and Wellness - Gift Cards">
               support@arcmassageandwellness.com
-            </Alert.Link>{" "}
-            or call{" "}
+            </Alert.Link>{' '}
+            or call{' '}
             <Alert.Link href="tel:2064753574">(206) 475-3574</Alert.Link> for
             more information
           </p>
