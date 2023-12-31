@@ -18,14 +18,14 @@ export default function Services(props) {
         <Tabs
           id="uncontrolled-tab-example"
           className="mb-3"
-          fill 
+          fill   
         >
           <Tab eventKey="esthetics" title="Massage Services" tabClassName="tab">
             <MassageServices />
           </Tab>
           {/* <Tab
             eventKey="services"
-            title="Esthetic Services"
+            title="Esthetic Services sdssd"
             tabClassName="tab"
             fill
           >
