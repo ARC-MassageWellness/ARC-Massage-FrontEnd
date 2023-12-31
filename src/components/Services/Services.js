@@ -12,7 +12,11 @@ export default function Services(props) {
       <div>
         <h2 className="servicesTitle">Services</h2>
         <div className="servicesInfo">
-          Here's what to consider when you book with us.
+          Here's what to consider when you book with us. 
+
+
+
+          CHANGE THIS LATER!!@!@!!@!@!@!
         </div>
 
         <Tabs
@@ -44,6 +48,6 @@ export default function Services(props) {
 
 /* Acer Nitro VG240Y Pbiip 23.8 Inches Full HD (1920 x 1080) IPS Gaming Monitor with AMD Radeon FREESYNC Technology, Zero Frame, 144Hz, 1ms VRB, (2 x HDM
 Acer 
-Acer VG270
+Acer VG270 sdcsfasfasfasfasdf
 
 */
