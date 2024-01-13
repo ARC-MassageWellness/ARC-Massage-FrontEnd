@@ -21,6 +21,24 @@ This website is to help my friend build her business. She is opening up her own 
 - 1.0 MVP
 - 2.0 Mobile Friendly
 - 2.1 Banners
+- 3.0 Solo Therapist
+
+Version 3.0
+
+Removing
+  - Other employees
+  - Esthetician services
+
+Adding
+  - New Location
+  - New Google Maps
+  - New Hours
+  - Banner with new location and packages
+  - Updated Links to new location
+  - Added Scroll to Top when changing pages
+
+
+
 
 ## Road Map
 
