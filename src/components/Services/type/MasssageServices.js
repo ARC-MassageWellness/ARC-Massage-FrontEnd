@@ -51,9 +51,9 @@ export default function MassageServices(props) {
             {basicMassage('basic')}
           </Grid>
         </Tab>
-        <Tab eventKey="lymphatic" title="Lymphatic" tabClassName="tab">
+        <Tab eventKey="medical" title="Medical" tabClassName="tab">
           <Grid container spacing={2} className="gridContainer">
-            {basicMassage('lymphatic')}
+            {basicMassage('medical')}
           </Grid>
         </Tab>
         <Tab eventKey="prenatal" title="Prenatal" tabClassName="tab">
@@ -61,21 +61,6 @@ export default function MassageServices(props) {
             {basicMassage('prenatal')}
           </Grid>
         </Tab>
-        {/* <Tab eventKey="intraoral" title="Intraoral" tabClassName="tab">
-          <Grid container spacing={2} className="gridContainer">
-            {basicMassage('cupping')}
-          </Grid>
-        </Tab>
-        <Tab eventKey="breast/Chest" title="Breast/Chest" tabClassName="tab">
-          <Grid container spacing={2} className="gridContainer">
-            {basicMassage('cupping')}
-          </Grid>
-        </Tab>
-        <Tab eventKey="Postnatal" title="Postnatal" tabClassName="tab">
-          <Grid container spacing={2} className="gridContainer">
-            {basicMassage('cupping')}
-          </Grid>
-        </Tab> */}
         <Tab eventKey="enhancement" title="Enhancements" tabClassName="tab">
           <Grid container spacing={2} className="gridContainer">
             {basicMassage('enhancement')}

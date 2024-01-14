@@ -12,7 +12,6 @@ export default function Main(props) {
         <div className="opening"></div>
         <div className="span titleTextLeft intro">
           Professional
-          {/* TAKE OUT br */}
           <br /> Tender Love
           <br /> and Care.
         </div>

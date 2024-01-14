@@ -2,7 +2,7 @@ import TherapistCard from "./therapistCard/TherapistCard";
 import "./therapists.css";
 import { db } from "./therapistsDB/db";
 
-import fullStaff from './therapistsDB/Img/full-staff-2nd.jpg'
+import fullStaff from './therapistsDB/Img/Family-Photo.jpg'
 
 export default function Therapist(props) {
   const therapistCards = db.map((el, idx) => {

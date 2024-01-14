@@ -23,8 +23,7 @@ export default function Medical(props) {
           Medical Massage Intake{' '}
         </a>
         <div>
-          Fax Number: 206-258-8843 (place in footer next to phone as well)
-        </div>
+          Fax Number: 206-258-8843 </div>
         <section>
           <h3 className="medicalTitle">Referral</h3>
           <p>
@@ -73,9 +72,3 @@ export default function Medical(props) {
   );
 }
 
-/*
-
-At thie time, ARC massage and family wellness center is unable to bill insaucne clients. We can howcver provide you with a superbill at your request. Prior to getting a superbill. We will needa  referral with diagnotistic codes on file. We strongly encourage call clients to cntact thsier insurance comapny prior ro service as we cannot guarentee reimbursement
-
-
-*/
