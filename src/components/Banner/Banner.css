@@ -34,6 +34,11 @@
   padding: 10px; 
   /* border-bottom: black solid 1.5px; */
   border-width: 90%;
+  
+}
+
+.bannerTitle:hover {
+  cursor: pointer;
 }
 
 /* button {

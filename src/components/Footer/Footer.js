@@ -5,6 +5,7 @@ import FaxIcon from '@mui/icons-material/Fax';
 import PermPhoneMsgIcon from '@mui/icons-material/PermPhoneMsg';
 import { hours } from '../About/db/db';
 
+
 export default function Footer(props) {
   const hoursSection = hours.map((el) => {
     return (
@@ -12,12 +13,14 @@ export default function Footer(props) {
         <Grid item md={6}>
           <div className="footerHours">{el.day}</div>
         </Grid>
-        <Grid item md={6} className="">
+        <Grid item md={6} >
           <div>{el.hours}</div>
         </Grid>
       </Grid>
     );
   });
+
+  const year = new Date().getFullYear();
 
   return (
     <>
@@ -85,14 +88,14 @@ export default function Footer(props) {
                     <div className="Headers">Contact Us:</div>
                     <div className="addressLink">
                       <a
-                        href="https://www.google.com/maps/place/Arc+Massage+and+Family+Wellness+Center/@47.4835882,-122.2143937,18z/data=!4m5!3m4!1s0x0:0xf03a3ef3c009d17d!8m2!3d47.4841524!4d-122.2144035"
+                        href="https://www.google.com/maps/place/2300+E+Valley+Rd,+Renton,+WA+98057/@47.4582558,-122.2279665,15z/data=!3m1!4b1!4m6!3m5!1s0x54905d3eb3c916b7:0x5a21c2c5ee264d52!8m2!3d47.4582418!4d-122.2176882!16s%2Fg%2F11f40m4jsp?entry=ttu"
                         target="_blank"
                         rel="noreferrer"
                         alt="Google Maps Link"
                       >
                         <div>
-                          200 South Tobin St, Suite A <br />
-                          Renton, WA, 98057, US
+                          2300 East Valley RD <br /> 
+                          Renton WA 98057
                         </div>
                       </a>
                     </div>
@@ -121,9 +124,6 @@ export default function Footer(props) {
                     {hoursSection}
                   </section>
                 </Grid>
-                {/* <Grid item xs={12} sm={12} md={6} lg={3}>
-              <section className="emailForm"></section>
-            </Grid> */}
               </Grid>
             </div>
           </div>
@@ -159,7 +159,7 @@ export default function Footer(props) {
           </section>
 
           <div className="copyright">
-            &#169; 2023 ARC Massage and Family Wellness Center, LLC
+            &#169; {year} ARC Massage and Family Wellness Center, LLC 
           </div>
           <div className="copyright">All Rights Reserved</div>
         </div>
