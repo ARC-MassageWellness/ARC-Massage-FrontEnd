@@ -27,8 +27,8 @@ export default function PackageSale(props) {
   let newLocation = (
     <p className="topBannerInfo">
 
-      <p>We are ecstatic to inform that we are moving to a new location as of January 22nd<br /><br />
-        Our new address will be<br />
+      <p>
+        We are ecstatic to inform that our new address is<br />
         <a
           href="https://www.google.com/maps/dir//2300+E+Valley+Rd+Renton,+WA+98057/@47.4582418,-122.2176882,16z/data=!4m5!4m4!1m0!1m2!1m1!1s0x54905d3eb3c916b7:0x5a21c2c5ee264d52"
           target="_blank"
