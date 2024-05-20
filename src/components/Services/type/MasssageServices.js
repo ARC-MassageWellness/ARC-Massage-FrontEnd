@@ -4,16 +4,38 @@ import {
   CardContent,
   Grid,
   Typography,
-} from '@mui/material';
+} from "@mui/material";
 
-import { Tab, Tabs } from 'react-bootstrap';
-import { db } from '../db/db';
+import { Tab, Tabs } from "react-bootstrap";
+import { db } from "../db/db";
+import { ConnectingAirportsOutlined } from "@mui/icons-material";
 
 export default function MassageServices(props) {
   const basicMassage = (service) => {
     let result = db.filter((filter) => filter.type === service);
 
     let finalResult = result.map((el, idx) => {
+      let massageDuration, massagePrices, massageDurationCounter = 0, bioArray;
+
+      if (el.duration) {
+        massageDuration = el.duration.map((el, idx) => {
+          massageDurationCounter++;
+          return (
+            <div key={idx}>
+              {" "}
+              {el}
+            </div>
+          );
+        });
+        massagePrices = el.costArray.map((el, idx) => (
+          <div  key={idx}>
+            ${el}
+          </div>
+        ));
+      }
+
+      if (Array.isArray(el.bio)) bioArray = el.bio.map((el, idx) => <div className="bioArrayItems" key={idx}>{el}</div>)
+
       return (
         <Grid item key={idx} className="sessionWidthGrid">
           <img className="cardImage" src={el.image} alt="data" />
@@ -24,13 +46,28 @@ export default function MassageServices(props) {
               </Typography>
               <Typography>{el.addOn && el.addOn}</Typography>
               <Typography variant="body2" color="text.secondary">
-                {el.bio}
+                {Array.isArray(el.bio) ? bioArray : el.bio}
               </Typography>
             </CardContent>
             <CardActions>
-              <div className="priceButton">
-                {el.addOn && '+'}${el.cost}
+                {massageDuration ? 
+              <div className="sessionDuration">
+                <div className="sessionDurationHeader">
+                  Duration{massageDurationCounter > 2 ? "s" : ""} / Price{massageDurationCounter > 2 ? "s" : ""}:
+                </div>
+                <div className="sessionDurationElementBox">
+                  <div  className="sessionDurationElements">{massageDuration ? massageDuration : ""}</div>
+                  <div  className="sessionDurationPrices"> {massagePrices ? massagePrices : ""}</div>
+                </div>
               </div>
+                : ''}
+            </CardActions>
+            <CardActions>
+              {massageDuration ? '' : 
+              <div className="priceButton">
+                {el.addOn && "+"}${el.cost}
+              </div>
+              }
             </CardActions>
           </Card>
         </Grid>
@@ -48,22 +85,27 @@ export default function MassageServices(props) {
       >
         <Tab eventKey="basic" title="Massage" tabClassName="tab">
           <Grid container spacing={2} className="gridContainer">
-            {basicMassage('basic')}
+            {basicMassage("basic")}
           </Grid>
         </Tab>
         <Tab eventKey="medical" title="Medical" tabClassName="tab">
           <Grid container spacing={2} className="gridContainer">
-            {basicMassage('medical')}
+            {basicMassage("medical")}
           </Grid>
         </Tab>
         <Tab eventKey="prenatal" title="Prenatal" tabClassName="tab">
           <Grid container spacing={2} className="gridContainer">
-            {basicMassage('prenatal')}
+            {basicMassage("prenatal")}
+          </Grid>
+        </Tab>
+        <Tab eventKey="specialty" title="Specialty Sessions" tabClassName="tab">
+          <Grid container spacing={2} className="gridContainer">
+            {basicMassage("specialty")}
           </Grid>
         </Tab>
         <Tab eventKey="enhancement" title="Enhancements" tabClassName="tab">
           <Grid container spacing={2} className="gridContainer">
-            {basicMassage('enhancement')}
+            {basicMassage("enhancement")}
           </Grid>
         </Tab>
       </Tabs>

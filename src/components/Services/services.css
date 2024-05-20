@@ -96,6 +96,43 @@
 }
 
 
+.sessionDuration {
+  margin: auto;
+  width: auto; 
+  
+}
+
+.sessionDurationHeader {
+  text-align: center;
+  color: rgb(110, 116, 158);
+  margin-bottom: 10px;
+}
+
+.sessionDurationElementBox {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px inset,
+    inset rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  background-color: rgb(249, 249, 249);
+  text-align: center;
+  padding: 10px 80px;
+}
+.sessionDurationElements {
+  display: inline-block;
+  color: rgb(110, 116, 158);
+}
+
+.sessionDurationPrices{
+  display: inline-block;
+  padding-left: 20px;
+  color: rgb(110, 116, 158);
+}
+
+
+
+.bioArrayItems {
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
 @media (max-width:1200px) {
   .serviceContainer{
     width: 100vw;
