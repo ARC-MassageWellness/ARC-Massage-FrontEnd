@@ -8,7 +8,6 @@ import {
 
 import { Tab, Tabs } from "react-bootstrap";
 import { db } from "../db/db";
-import { ConnectingAirportsOutlined } from "@mui/icons-material";
 
 export default function MassageServices(props) {
   const basicMassage = (service) => {
