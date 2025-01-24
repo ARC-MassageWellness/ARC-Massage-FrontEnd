@@ -13,7 +13,7 @@ export default function About(props) {
       <Grid item className="gridItem">
         <div className="hourDay">{el.day}</div>
         <div className="hourTime">
-          {el.hours} {el.day === 'Sunday' ? '' : 'Appointments only'}
+          {el.hours} {el.day === 'Sunday' ? 'Appointments only' : 'Appointments only'}
         </div>
       </Grid>
     );

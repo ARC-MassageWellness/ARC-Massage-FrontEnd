@@ -12,7 +12,7 @@ import massage2 from '../img/sessionsImg/massage2.jpg'
 // import massage4 from '../img/sessionsImg/massage4.jpg'
 import massage5 from '../img/sessionsImg/massage5.jpg'
 
-
+import intraoral from '../img/sessionsImg/intraoral.png'
 import prenatal1 from '../img/sessionsImg/prenatal1.jpg'
 import SugarScrub from '../img/sessionsImg/sugar-scrub.png'
 
@@ -51,7 +51,7 @@ export const db = [
     bio: 'Performed by experienced therapists, Prenatal Massages are tailored to your comfort to best suit your needs.',
     type: 'prenatal',
     duration: ['60 minutes','90 minutes'],
-    costArray: [110, 165]
+    costArray: [110,165]
   },
   {
     title: 'Table Thai Massages',
@@ -59,7 +59,15 @@ export const db = [
     bio: ['***Ann Husselbee is the only provider that performs this session***','Thai Table massage is an adaption of Traditional Thai massage techniques for recipients lying on a table. Thai massage is a traditional massage technique that combines deep tissue pressure, muscle and joint stretching, and gentle manipulations of the body. Research has shown Thai massage to beneficial for pain relief and for easing symptoms of depression and anxiety.'],
     type: 'specialty',
     duration: ['60 minutes','90 minutes'],
-    costArray: [135, 200]
+    costArray: [120,180]
+  },
+  {
+    title: 'Gua Sha Massage',
+    image: guaSha,
+    bio: ['***Ann Husselbee is the only provider that performs this session***','Also known as “skin scraping” or “scraping therapy,” it\'s used to soothe discomfort, stiffness, and tension, and ease headaches by stroking the body with a smooth-edged tool.'],
+    type: 'specialty',
+    duration: ['60 minutes'],
+    costArray: [120]
   },
   {
     title: 'Cupping Massages',
@@ -67,15 +75,7 @@ export const db = [
     bio: 'Cupping therapy is an ancient form of alternative medicine in which a therapist puts special cups on your skin for a few minutes to create suction. People get it for many purposes, including to help with pain, inflammation, blood flow, relaxation and well-being, and as a type of deep-tissue massage.',
     type: 'specialty',
     duration: ['60 minutes','90 minutes'],
-    costArray: [135, 200]
-  },
-  {
-    title: 'Gua Sha Massage',
-    image: guaSha,
-    bio: ['***Ann Husselbee is the only provider that performs this session***','Also known as “skin scraping” or “scraping therapy,” it\'s used to soothe discomfort, stiffness, and tension, and ease headaches by stroking the body with a smooth-edged tool.'],
-    type: 'specialty',
-    duration: ['60 minutes','90 minutes'],
-    costArray: [135,200]
+    costArray: [120,180]
   },
   {
     title: 'Hot Stone Massages',
@@ -83,7 +83,15 @@ export const db = [
     bio: 'A hot stone massage is a type of massage therapy. It\'s used to help you relax and ease tense muscles and damaged soft tissues throughout your body.',
     type: 'specialty',
     duration: ['60 minutes','90 minutes'],
-    costArray: [135, 200]
+    costArray: [120,180]
+  },
+  {
+    title: 'Intraoral Massage',
+    image: intraoral,
+    bio: ['Intraoral massage is a manual therapy technique that involves massaging of the muscles inside and outside of the mouth.', '60 minute routine is a 45 minute intraoral session with 15 minutes post-routine spent on décolletage or area of your choice','105 minute routine is a 60 minute massage with 45 minute intraoral session'],
+    type: 'specialty',
+    duration: ['60 minutes','105 minutes'],
+    costArray: [120,200]
   },
   {
     title: 'Aromatherapy',
@@ -103,14 +111,14 @@ export const db = [
     title: 'Cupping Spot Treatment',
     image: cupping1,
     bio: 'Cupping in on one area of your choosing.',
-    cost: 15,
+    cost: 20,
     type: 'enhancement'
   },
   {
     title: 'Gua Sha Enhancement',
     image: guaSha,
     bio: ['***Ann Husselbee is the only provider that performs this session***','Gua Sha in one area of your choosing.'],
-    cost: 15,
+    cost: 20,
     type: 'enhancement'
   },
 
