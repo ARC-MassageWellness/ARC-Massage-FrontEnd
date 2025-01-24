@@ -130,7 +130,7 @@ footer {
 
 .hoursSection {
   /* border: blue solid 5px; */
-  max-width: 300px;
+  max-width: 340px;
 }
 
 @media  (max-width: 780px) {
