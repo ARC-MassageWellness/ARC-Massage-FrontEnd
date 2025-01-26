@@ -31,31 +31,31 @@ export const policy = [
 export const hours = [
   {
     day: "Monday",
-    hours: "9:30am - 4:00pm",
+    hours: "9:00am - 4:00pm",
   },
   {
     day: "Tuesday",
-    hours: "9:30am - 4:00pm",
+    hours: "9:00am - 9:30pm",
   },
   {
     day: "Wednesday",
-    hours: "9:30am - 12:30pm",
+    hours: "9:30am - 3:15pm",
   },
   {
     day: "Thursday",
-    hours: "5:00pm - 9:00pm",
+    hours: "11:00am - 9:45pm",
   },
   {
     day: 'Friday',
-    hours: '11:00am - 4:00pm'
+    hours: '11:00am - 5:00pm'
   },
   {
     day: "Saturday",
-    hours: "9:00am - 1:00pm",
+    hours: "9:00am - 3:30pm",
   },
   {
     day: "Sunday",
-    hours: "Closed",
+    hours: "11:00am - 5:00pm",
   },
 ];
 
